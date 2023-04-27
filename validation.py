@@ -17,7 +17,7 @@ def validate_mortgage_input(principal, interest_rate, period):
         return False
 
     # Check if interest rate is within a valid range (0 to 1)
-    if interest_rate < 0 or interest_rate > 1:
+    if interest_rate < 0 or interest_rate > 100:
         return False
 
     # Check if period is a positive integer

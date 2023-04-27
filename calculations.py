@@ -23,7 +23,6 @@ def calculate_monthly_payment(principal, interest_rate, period):
 
     return monthly_payment
 
-
 # TODO: Implement calculation for total interest paid
 def calculate_total_interest(principal, interest_rate, period):
     """
@@ -38,7 +37,18 @@ def calculate_total_interest(principal, interest_rate, period):
     Returns:
         float: The calculated total interest paid.
     """
-    # ...
-    pass
+    # Convert period to months
+    period = period * 12
+
+    # Calculate monthly interest rate
+    monthly_interest_rate = interest_rate / 12
+
+    # Calculate total interest paid
+    numerator = monthly_interest_rate * principal
+    denominator = 1 - (1 + monthly_interest_rate) ** (-period)
+    total_interest = (numerator / denominator) - principal
+
+    return total_interest
+
 
 # TODO: Implement other necessary mortgage calculations

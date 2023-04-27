@@ -1,3 +1,5 @@
+
+For the developers
 my_mortgage_calculator/
 ├── app.py                  # Main entry point of the app
 ├── calculations.py         # Calculation logic

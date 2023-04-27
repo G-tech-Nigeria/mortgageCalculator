@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<form method="post" action="/calculate-mortgage-payment">
+    <label for="principal">Loan amount:</label>
+    <input type="number" name="principal" id="principal" required>
+
+    <label for="interest_rate">Interest rate:</label>
+    <input type="number" name="interest_rate" id="interest_rate" required>
+
+    <label for="loan_term">Loan Term:</label>
+    <select name="loan_term" id="loan_term">
+        <option value="15">15 years</option>
+        <option value="20">20 years</option>
+        <option value="25">25 years</option>
+        <option value="30">30 years</option>
+    </select>
+
+    <button type="submit">Calculate</button>
+</form>
+
+</body>
+</html>
