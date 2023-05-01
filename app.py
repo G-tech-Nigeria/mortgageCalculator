@@ -1,8 +1,3 @@
-# TODO: 1.The calculator should allow users to enter the amount of the loan they are considering.
-# TODO: 2.The calculator should allow users to enter the interest rate they are being offered.
-# TODO: 3. The calculator should allow users to select the term of the loan, such as 15 years, 20 years, etc.
-# TODO: 4.The calculator should display the estimated monthly mortgage payments based on the inputs provided
-
 # app.py - Main application file for the mortgage calculator API
 
 from flask import Flask, request, jsonify, render_template
